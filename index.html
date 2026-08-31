@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day II — Six Days to Go</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- =====================================================
+       PAGE 1 — SIX DAYS TO GO
+  ====================================================== -->
+
+  <section class="page page-one" id="page1">
+
+    <img class="cat cat1"
+      src="https://i.ibb.co/Mkq7T24c/IMG-0592.png"
+      alt="">
+
+    <img class="cat cat2"
+      src="https://i.ibb.co/vCJr7NkJ/IMG-0593.png"
+      alt="">
+
+    <img class="cat cat3"
+      src="https://i.ibb.co/LhsFtgDn/IMG-0594.png"
+      alt="">
+
+    <img class="cat cat4"
+      src="https://i.ibb.co/RGpM5W95/IMG-0595.png"
+      alt="">
+
+    <img class="cat cat5"
+      src="https://i.ibb.co/fzZHG6Wm/IMG-0603.png"
+      alt="">
+
+    <div class="page-one-content">
+
+      <div class="small-heading">
+        THE COUNTDOWN CONTINUES
+      </div>
+
+      <div class="roman">
+        II
+      </div>
+
+      <h1>
+        SIX DAYS<br>
+        TO GO
+      </h1>
+
+      <div class="ornament">
+        ───── ✦ ─────
+      </div>
+
+      <p class="intro-line">
+        Welcome to Day 2.
+      </p>
+
+      <p class="handwritten">
+        There's something waiting for you.
+      </p>
+
+      <button class="dark-button" onclick="goToPage(2)">
+        Proceed →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       PAGE 2 — CHALLENGE INTRO
+  ====================================================== -->
+
+  <section class="page hidden page-two" id="page2">
+
+    <div class="paper challenge-paper">
+
+      <div class="paper-number">
+        II
+      </div>
+
+      <div class="ornament">
+        ✦ ───────── ✦
+      </div>
+
+      <p class="eyebrow">
+        TODAY'S CHALLENGE
+      </p>
+
+      <h2>
+        A Word Search
+      </h2>
+
+      <div class="divider">
+        ─────── ✦ ───────
+      </div>
+
+      <p>
+        Five words have been hidden among a collection
+        of letters.
+      </p>
+
+      <p>
+        Find all five to uncover the message
+        waiting for you.
+      </p>
+
+      <p class="handwritten challenge-note">
+        Take your time. They're hiding somewhere.
+      </p>
+
+      <div class="little-cat">
+        🐈‍⬛
+      </div>
+
+      <button class="dark-button" onclick="goToPage(3)">
+        Begin →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       PAGE 3 — WORD SEARCH
+  ====================================================== -->
+
+  <section class="page hidden page-three" id="page3">
+
+    <div class="wordsearch-paper">
+
+      <p class="eyebrow">
+        THE HIDDEN MESSAGE
+      </p>
+
+      <h2>
+        Find the five words.
+      </h2>
+
+      <p class="instructions">
+        Press and drag across the letters to select a word.
+      </p>
+
+      <div class="ornament small-ornament">
+        ✦ ─── ✦ ─── ✦
+      </div>
+
+
+      <!-- WORD SEARCH GRID -->
+
+      <div
+        class="word-grid"
+        id="wordGrid"
+      ></div>
+
+
+      <div class="found-count">
+        WORDS FOUND:
+        <strong id="foundCount">0 / 5</strong>
+      </div>
+
+
+      <div
+        class="found-words"
+        id="foundWords"
+      >
+        <span>_</span>
+        <span>_</span>
+        <span>_</span>
+        <span>_</span>
+        <span>_</span>
+      </div>
+
+
+      <div
+        class="word-message"
+        id="wordMessage"
+      ></div>
+
+
+      <button
+        class="dark-button hidden"
+        id="continueButton"
+        onclick="goToPage(4)"
+      >
+        Reveal your gift →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       PAGE 4 — SPOTIFY PLAYLIST
+  ====================================================== -->
+
+  <section class="page hidden page-four" id="page4">
+
+    <div class="playlist-page">
+
+      <div class="playlist-title">
+        YOU FOUND THE MESSAGE
+      </div>
+
+      <div class="revealed-message">
+        I LOVE YOU SO MUCH
+      </div>
+
+      <div class="ornament">
+        ✦ ───────── ✦
+      </div>
+
+
+      <div class="playlist-note">
+
+        <div class="tape"></div>
+
+        <p>
+          This playlist contains all the songs
+          that make me think of you.
+        </p>
+
+        <p>
+          I hope you like it.
+        </p>
+
+      </div>
+
+
+      <!-- SPOTIFY CARD -->
+
+      <div class="spotify-card">
+
+        <div class="spotify-top">
+          A COLLECTION OF SONGS
+        </div>
+
+        <div class="music-symbol">
+          ♫
+        </div>
+
+        <h3>
+          Songs That<br>
+          Remind Me Of You
+        </h3>
+
+        <div class="spotify-divider">
+          ─── ✦ ───
+        </div>
+
+        <p>
+          curated especially for you
+        </p>
+
+        <a
+          class="spotify-button"
+          href="https://open.spotify.com/playlist/06k9K3X6ABbz0IEb2Cu5ZD?si=_4jtzE7-TyG2RJMeDfFxHw&utm_source=copy-link&pi=nLvcWSVDRBGM4"
+          target="_blank"
+          rel="noopener"
+        >
+          Open Playlist
+        </a>
+
+      </div>
+
+
+      <div class="end-message">
+
+        DAY 2 / 8 ✓
+
+        <br><br>
+
+        <span>
+          See you tomorrow.
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
