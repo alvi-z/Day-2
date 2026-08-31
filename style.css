@@ -1,0 +1,1203 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&family=DM+Sans:wght@400;500;600&display=swap');
+
+
+/* =====================================================
+   GENERAL
+===================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background: #171613;
+  color: #27231d;
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.page {
+  min-height: 100svh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px 16px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   PAGE 1 — ENTRY
+===================================================== */
+
+.page-one {
+
+  background:
+
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(113, 94, 64, 0.22),
+      transparent 20%
+    ),
+
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(113, 94, 64, 0.18),
+      transparent 22%
+    ),
+
+    #211f1b;
+
+  color: #eee5d4;
+}
+
+.page-one::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 14px;
+
+  border:
+    1px solid
+    rgba(224, 211, 185, 0.4);
+
+  pointer-events: none;
+}
+
+.page-one::after {
+
+  content: "✦";
+
+  position: absolute;
+
+  top: 30px;
+  left: 35px;
+
+  color: #b9a47d;
+
+  font-size: 18px;
+}
+
+
+/* =====================================================
+   CATS
+===================================================== */
+
+.cat {
+
+  position: absolute;
+
+  z-index: 3;
+
+  max-width: 125px;
+
+  height: auto;
+
+  pointer-events: none;
+
+  filter:
+    drop-shadow(
+      2px 4px 3px
+      rgba(0,0,0,0.35)
+    );
+}
+
+.cat1 {
+
+  top: 5%;
+  left: 3%;
+
+  width: 105px;
+
+  transform:
+    rotate(-9deg);
+}
+
+.cat2 {
+
+  top: 8%;
+  right: 3%;
+
+  width: 110px;
+
+  transform:
+    rotate(8deg);
+}
+
+.cat3 {
+
+  top: 45%;
+  left: -5%;
+
+  width: 120px;
+
+  transform:
+    rotate(7deg);
+}
+
+.cat4 {
+
+  bottom: 4%;
+  right: 2%;
+
+  width: 120px;
+
+  transform:
+    rotate(-8deg);
+}
+
+.cat5 {
+
+  bottom: 5%;
+  left: 4%;
+
+  width: 100px;
+
+  transform:
+    rotate(9deg);
+}
+
+
+/* =====================================================
+   ENTRY CONTENT
+===================================================== */
+
+.page-one-content {
+
+  width: min(
+    600px,
+    90%
+  );
+
+  text-align: center;
+
+  position: relative;
+
+  z-index: 5;
+}
+
+.small-heading {
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 12px;
+
+  color: #b9a47d;
+}
+
+.roman {
+
+  font-family:
+    "Libre Baskerville",
+    serif;
+
+  font-size: 20px;
+
+  letter-spacing: 5px;
+
+  color: #cdbb99;
+
+  margin-bottom: 10px;
+}
+
+.page-one h1 {
+
+  font-family:
+    "Libre Baskerville",
+    serif;
+
+  font-size:
+    clamp(
+      43px,
+      12vw,
+      78px
+    );
+
+  line-height: 0.98;
+
+  margin: 0;
+
+  letter-spacing: 2px;
+
+  font-weight: 700;
+}
+
+.ornament {
+
+  color: #b9a47d;
+
+  font-size: 14px;
+
+  margin: 25px 0;
+}
+
+.intro-line {
+
+  font-family:
+    "Libre Baskerville",
+    serif;
+
+  font-size: 14px;
+
+  margin-top: 10px;
+}
+
+.handwritten {
+
+  font-family:
+    "Caveat",
+    cursive;
+
+  font-size: 25px;
+
+  color: #cbb995;
+
+  transform:
+    rotate(-2deg);
+}
+
+.dark-button {
+
+  border:
+    1px solid
+    #c9b792;
+
+  background:
+    transparent;
+
+  color:
+    #eee5d4;
+
+  padding:
+    13px 26px;
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size:
+    12px;
+
+  letter-spacing:
+    1px;
+
+  cursor:
+    pointer;
+
+  margin-top:
+    10px;
+
+  transition:
+    0.25s ease;
+}
+
+.dark-button:hover {
+
+  background:
+    #c9b792;
+
+  color:
+    #211f1b;
+
+  transform:
+    translateY(-2px);
+}
+
+
+/* =====================================================
+   PAGE 2
+===================================================== */
+
+.page-two {
+
+  background:
+    #211f1b;
+
+  color:
+    #2d2922;
+}
+
+.challenge-paper {
+
+  width:
+    min(
+      650px,
+      94%
+    );
+
+  min-height:
+    600px;
+
+  background:
+    #e7dcc6;
+
+  padding:
+    60px
+    35px
+    45px;
+
+  text-align:
+    center;
+
+  position:
+    relative;
+
+  box-shadow:
+    9px 10px 0
+    rgba(
+      0,
+      0,
+      0,
+      0.45
+    );
+
+  border:
+    1px solid
+    #b8a98c;
+}
+
+.challenge-paper::before {
+
+  content:
+    "";
+
+  position:
+    absolute;
+
+  inset:
+    13px;
+
+  border:
+    1px solid
+    rgba(
+      81,
+      67,
+      48,
+      0.3
+    );
+
+  pointer-events:
+    none;
+}
+
+.paper-number {
+
+  font-family:
+    "Libre Baskerville",
+    serif;
+
+  font-size:
+    20px;
+
+  letter-spacing:
+    5px;
+
+  color:
+    #756247;
+}
+
+.eyebrow {
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size:
+    9px;
+
+  letter-spacing:
+    3px;
+
+  font-weight:
+    600;
+
+  margin-top:
+    35px;
+}
+
+.challenge-paper h2 {
+
+  font-family:
+    "Libre Baskerville",
+    serif;
+
+  font-size:
+    clamp(
+      35px,
+      9vw,
+      55px
+    );
+
+  margin:
+    15px 0;
+}
+
+.divider {
+
+  color:
+    #756247;
+
+  margin:
+    15px 0 30px;
+}
+
+.challenge-paper p {
+
+  font-family:
+    "Libre Baskerville",
+    serif;
+
+  font-size:
+    14px;
+
+  line-height:
+    1.8;
+
+  max-width:
+    450px;
+
+  margin:
+    15px auto;
+}
+
+.challenge-paper
+.challenge-note {
+
+  font-family:
+    "Caveat",
+    cursive;
+
+  font-size:
+    26px;
+
+  color:
+    #65553e;
+
+  margin-top:
+    35px;
+}
+
+.little-cat {
+
+  font-size:
+    24px;
+
+  margin:
+    20px;
+}
+
+
+/* =====================================================
+   PAGE 3 — WORD SEARCH
+===================================================== */
+
+.page-three {
+
+  align-items:
+    flex-start;
+
+  padding-top:
+    30px;
+
+  background:
+    #211f1b;
+}
+
+.wordsearch-paper {
+
+  width:
+    min(
+      650px,
+      96%
+    );
+
+  background:
+    #e7dcc6;
+
+  padding:
+    35px
+    18px
+    40px;
+
+  text-align:
+    center;
+
+  box-shadow:
+    9px 10px 0
+    rgba(
+      0,
+      0,
+      0,
+      0.45
+    );
+
+  border:
+    1px solid
+    #b8a98c;
+}
+
+.wordsearch-paper h2 {
+
+  font-family:
+    "Libre Baskerville",
+    serif;
+
+  font-size:
+    27px;
+
+  margin:
+    10px 0;
+}
+
+.instructions {
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size:
+    12px;
+
+  line-height:
+    1.5;
+
+  margin-bottom:
+    15px;
+}
+
+.small-ornament {
+
+  margin:
+    12px 0 20px;
+}
+
+
+/* =====================================================
+   WORD GRID
+===================================================== */
+
+.word-grid {
+
+  width:
+    min(
+      94vw,
+      500px
+    );
+
+  aspect-ratio:
+    1 / 1;
+
+  margin:
+    20px auto;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      10,
+      1fr
+    );
+
+  grid-template-rows:
+    repeat(
+      10,
+      1fr
+    );
+
+  border:
+    1px solid
+    #8d7b5d;
+
+  background:
+    #ddd0b7;
+
+  touch-action:
+    none;
+
+  user-select:
+    none;
+}
+
+.letter {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  font-family:
+    "Libre Baskerville",
+    serif;
+
+  font-size:
+    clamp(
+      12px,
+      3.5vw,
+      20px
+    );
+
+  color:
+    #29251e;
+
+  border:
+    0.5px solid
+    rgba(
+      80,
+      65,
+      44,
+      0.2
+    );
+
+  cursor:
+    pointer;
+
+  position:
+    relative;
+}
+
+.letter.selected {
+
+  background:
+    #827154;
+
+  color:
+    #f5eddf;
+
+  border-radius:
+    50%;
+
+  transform:
+    scale(
+      0.82
+    );
+}
+
+.letter.found {
+
+  background:
+    #504636;
+
+  color:
+    #f5eddf;
+
+  border-radius:
+    50%;
+}
+
+
+/* =====================================================
+   FOUND WORDS
+===================================================== */
+
+.found-count {
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size:
+    10px;
+
+  letter-spacing:
+    2px;
+
+  margin-top:
+    20px;
+}
+
+.found-count strong {
+
+  color:
+    #63523a;
+}
+
+.found-words {
+
+  display:
+    flex;
+
+  justify-content:
+    center;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    9px;
+
+  margin:
+    15px auto;
+
+  max-width:
+    450px;
+}
+
+.found-words span {
+
+  min-width:
+    45px;
+
+  padding:
+    5px 8px;
+
+  border-bottom:
+    1px solid
+    #8e7c5e;
+
+  font-family:
+    "Caveat",
+    cursive;
+
+  font-size:
+    20px;
+}
+
+.word-message {
+
+  font-family:
+    "Caveat",
+    cursive;
+
+  font-size:
+    30px;
+
+  font-weight:
+    700;
+
+  line-height:
+    1.2;
+
+  margin:
+    20px auto;
+
+  max-width:
+    450px;
+}
+
+
+/* =====================================================
+   PAGE 4 — PLAYLIST
+===================================================== */
+
+.page-four {
+
+  background:
+    #211f1b;
+
+  color:
+    #eee5d4;
+
+  align-items:
+    flex-start;
+
+  padding-top:
+    45px;
+}
+
+.playlist-page {
+
+  width:
+    min(
+      650px,
+      94%
+    );
+
+  text-align:
+    center;
+}
+
+.playlist-title {
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size:
+    10px;
+
+  letter-spacing:
+    4px;
+
+  color:
+    #b9a47d;
+}
+
+.revealed-message {
+
+  font-family:
+    "Caveat",
+    cursive;
+
+  font-size:
+    clamp(
+      45px,
+      12vw,
+      72px
+    );
+
+  color:
+    #eee5d4;
+
+  margin:
+    12px 0;
+}
+
+.playlist-note {
+
+  position:
+    relative;
+
+  background:
+    #e7dcc6;
+
+  color:
+    #29251f;
+
+  width:
+    min(
+      500px,
+      92%
+    );
+
+  margin:
+    25px auto;
+
+  padding:
+    35px 25px 25px;
+
+  transform:
+    rotate(
+      -1deg
+    );
+
+  box-shadow:
+    6px 7px 0
+    rgba(
+      0,
+      0,
+      0,
+      0.4
+    );
+}
+
+.playlist-note p {
+
+  font-family:
+    "Caveat",
+    cursive;
+
+  font-size:
+    24px;
+
+  line-height:
+    1.35;
+
+  margin:
+    10px 0;
+}
+
+.tape {
+
+  position:
+    absolute;
+
+  width:
+    85px;
+
+  height:
+    23px;
+
+  background:
+    rgba(
+      183,
+      155,
+      107,
+      0.7
+    );
+
+  top:
+    -11px;
+
+  left:
+    calc(
+      50% - 42px
+    );
+
+  transform:
+    rotate(
+      -3deg
+    );
+}
+
+
+/* =====================================================
+   SPOTIFY CARD
+===================================================== */
+
+.spotify-card {
+
+  width:
+    min(
+      430px,
+      90%
+    );
+
+  margin:
+    40px auto;
+
+  padding:
+    35px 25px;
+
+  background:
+    #292722;
+
+  border:
+    1px solid
+    #a89570;
+
+  box-shadow:
+    inset 0 0 0 7px #211f1b,
+    inset 0 0 0 8px #a89570,
+    7px 8px 0
+    rgba(
+      0,
+      0,
+      0,
+      0.45
+    );
+
+  position:
+    relative;
+}
+
+.spotify-top {
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size:
+    8px;
+
+  letter-spacing:
+    3px;
+
+  color:
+    #b9a47d;
+}
+
+.music-symbol {
+
+  font-family:
+    "Libre Baskerville",
+    serif;
+
+  font-size:
+    42px;
+
+  color:
+    #c8b58e;
+
+  margin:
+    15px 0 5px;
+}
+
+.spotify-card h3 {
+
+  font-family:
+    "Libre Baskerville",
+    serif;
+
+  font-size:
+    25px;
+
+  line-height:
+    1.3;
+
+  margin:
+    5px 0;
+}
+
+.spotify-divider {
+
+  color:
+    #b9a47d;
+
+  margin:
+    15px;
+}
+
+.spotify-card p {
+
+  font-family:
+    "Caveat",
+    cursive;
+
+  font-size:
+    21px;
+
+  color:
+    #c7b895;
+}
+
+.spotify-button {
+
+  display:
+    inline-block;
+
+  margin-top:
+    15px;
+
+  padding:
+    12px 24px;
+
+  border:
+    1px solid
+    #c9b792;
+
+  color:
+    #eee5d4;
+
+  text-decoration:
+    none;
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size:
+    11px;
+
+  letter-spacing:
+    1px;
+
+  transition:
+    0.2s ease;
+}
+
+.spotify-button:hover {
+
+  background:
+    #c9b792;
+
+  color:
+    #211f1b;
+}
+
+
+/* =====================================================
+   END
+===================================================== */
+
+.end-message {
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size:
+    9px;
+
+  letter-spacing:
+    3px;
+
+  color:
+    #b9a47d;
+
+  margin:
+    35px 0;
+}
+
+.end-message span {
+
+  font-family:
+    "Caveat",
+    cursive;
+
+  font-size:
+    24px;
+
+  letter-spacing:
+    0;
+
+  color:
+    #eee5d4;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .cat1 {
+    width: 85px;
+  }
+
+  .cat2 {
+    width: 85px;
+  }
+
+  .cat3 {
+    width: 90px;
+    left: -8%;
+  }
+
+  .cat4 {
+    width: 90px;
+  }
+
+  .cat5 {
+    width: 80px;
+  }
+
+  .challenge-paper {
+    padding:
+      45px
+      22px
+      35px;
+  }
+
+  .wordsearch-paper {
+    padding:
+      30px
+      10px
+      35px;
+  }
+
+  .word-grid {
+    width:
+      94vw;
+  }
+
+}
